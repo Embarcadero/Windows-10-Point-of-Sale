@@ -53,6 +53,7 @@ object ProductsFrame: TProductsFrame
       Width = 105
       Height = 67
       Align = alLeft
+      ImageCollection = DM.IconImageCollection
       ImageWidth = 0
       ImageHeight = 0
       ImageIndex = 0
