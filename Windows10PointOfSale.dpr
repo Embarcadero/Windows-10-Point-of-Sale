@@ -13,7 +13,8 @@ uses
   uUpdateProduct in 'uUpdateProduct.pas' {UpdateProductFrame: TFrame},
   Vcl.Themes,
   Vcl.Styles,
-  uCustomerForm in 'uCustomerForm.pas' {CustomerForm};
+  uCustomerForm in 'uCustomerForm.pas' {CustomerForm},
+  uReceiptForm in 'uReceiptForm.pas' {ReceiptForm};
 
 {$R *.res}
 
@@ -25,5 +26,6 @@ begin
   Application.CreateForm(TMainForm, MainForm);
   Application.CreateForm(TReportForm, ReportForm);
   Application.CreateForm(TCustomerForm, CustomerForm);
+  Application.CreateForm(TReceiptForm, ReceiptForm);
   Application.Run;
 end.

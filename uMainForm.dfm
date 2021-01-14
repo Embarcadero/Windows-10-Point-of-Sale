@@ -128,9 +128,6 @@ object MainForm: TMainForm
         inherited Panel8: TPanel
           Width = 953
           ExplicitWidth = 953
-          inherited Label25: TLabel
-            Height = 45
-          end
           inherited UsersRelativePanel: TRelativePanel
             Width = 720
             ControlCollection = <
@@ -156,32 +153,6 @@ object MainForm: TMainForm
             inherited Panel5: TPanel
               Left = 461
               ExplicitLeft = 461
-              inherited Label4: TLabel
-                Left = 167
-                Width = 92
-              end
-              inherited SaleTotalLabel: TLabel
-                Left = 198
-                Width = 61
-              end
-            end
-            inherited Panel6: TPanel
-              inherited CashierLabel: TLabel
-                Width = 108
-              end
-              inherited PriceModeLabel: TLabel
-                Width = 140
-              end
-              inherited CustomerPanel: TPanel
-                inherited CustomerLabel: TLabel
-                  Width = 85
-                  Height = 19
-                  ExplicitLeft = 74
-                end
-                inherited Label2: TLabel
-                  Height = 19
-                end
-              end
             end
           end
         end
@@ -257,13 +228,11 @@ object MainForm: TMainForm
               Width = 235
               ExplicitWidth = 235
               inherited TaxLabel: TLabel
-                Left = 149
-                Width = 86
+                Width = 235
                 ExplicitLeft = 149
               end
               inherited TotalLabel: TLabel
-                Left = 82
-                Width = 153
+                Width = 235
                 ExplicitLeft = 82
               end
             end
@@ -272,9 +241,6 @@ object MainForm: TMainForm
         inherited Panel3: TPanel
           Left = 553
           ExplicitLeft = 553
-          inherited Label1: TLabel
-            Width = 200
-          end
           inherited GridPanel2: TGridPanel
             ControlCollection = <
               item
@@ -367,9 +333,6 @@ object MainForm: TMainForm
         inherited Panel8: TPanel
           Width = 953
           ExplicitWidth = 953
-          inherited Label25: TLabel
-            Height = 45
-          end
           inherited ProductsRelativePanel: TRelativePanel
             Width = 709
             ControlCollection = <
@@ -441,40 +404,35 @@ object MainForm: TMainForm
           Width = 931
           ExplicitWidth = 931
           inherited ProductsTab: TTabSheet
-            ExplicitLeft = 0
-            ExplicitTop = 0
+            ExplicitLeft = 4
+            ExplicitTop = 24
             ExplicitWidth = 923
-            ExplicitHeight = 0
+            ExplicitHeight = 11
           end
           inherited CategoriesTab: TTabSheet
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 0
-            ExplicitHeight = 0
+            ExplicitLeft = 4
+            ExplicitTop = 24
+            ExplicitWidth = 824
           end
           inherited BrandsTab: TTabSheet
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 0
-            ExplicitHeight = 0
+            ExplicitLeft = 4
+            ExplicitTop = 24
+            ExplicitWidth = 824
           end
           inherited GroupsTab: TTabSheet
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 0
-            ExplicitHeight = 0
+            ExplicitLeft = 4
+            ExplicitTop = 24
+            ExplicitWidth = 824
           end
           inherited VATab: TTabSheet
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 0
-            ExplicitHeight = 0
+            ExplicitLeft = 4
+            ExplicitTop = 24
+            ExplicitWidth = 824
           end
           inherited UnitsTab: TTabSheet
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 0
-            ExplicitHeight = 0
+            ExplicitLeft = 4
+            ExplicitTop = 24
+            ExplicitWidth = 824
           end
         end
       end
@@ -495,15 +453,13 @@ object MainForm: TMainForm
           Top = 129
           Width = 931
           Height = 456
+          ExplicitTop = 129
           ExplicitWidth = 931
           ExplicitHeight = 456
         end
         inherited Panel8: TPanel
           Width = 953
           ExplicitWidth = 953
-          inherited Label25: TLabel
-            Height = 45
-          end
           inherited UsersRelativePanel: TRelativePanel
             Width = 725
             ControlCollection = <
@@ -565,12 +521,12 @@ object MainForm: TMainForm
           ExplicitHeight = 47
           inherited Panel1: TPanel
             inherited Label1: TLabel
-              Width = 28
+              Width = 170
             end
           end
           inherited Panel2: TPanel
             inherited Label2: TLabel
-              Width = 16
+              Width = 170
             end
           end
         end
@@ -591,9 +547,6 @@ object MainForm: TMainForm
         inherited Panel8: TPanel
           Width = 953
           ExplicitWidth = 953
-          inherited Label25: TLabel
-            Height = 45
-          end
           inherited UsersRelativePanel: TRelativePanel
             Width = 761
             ControlCollection = <
@@ -685,9 +638,6 @@ object MainForm: TMainForm
         inherited Panel8: TPanel
           Width = 953
           ExplicitWidth = 953
-          inherited Label25: TLabel
-            Height = 45
-          end
           inherited UpdateRelativePanel: TRelativePanel
             Width = 605
             ControlCollection = <
@@ -837,7 +787,7 @@ object MainForm: TMainForm
           ExplicitLeft = 697
           ExplicitHeight = 546
           inherited Label14: TLabel
-            Width = 125
+            Width = 284
           end
         end
       end

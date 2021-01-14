@@ -77,7 +77,7 @@ implementation
 {$R *.dfm}
 
 uses
-  System.UITypes, Vcl.Themes, uDM;
+  System.UITypes, Vcl.Themes, uDM, uReceiptForm, uReportForm;
 
 procedure TMainForm.MessageDialog(const AMessage: String);
 begin
@@ -231,7 +231,11 @@ end;
 
 procedure TMainForm.VCLBodyThemeCBChange(Sender: TObject);
 begin
-  TStyleManager.TrySetStyle(VCLBodyThemeCB.Text)
+  TStyleManager.TrySetStyle(VCLBodyThemeCB.Text);
+  FreeAndNil(ReceiptForm);
+  ReceiptForm := TReceiptForm.Create(Self);
+  FreeAndNil(ReportForm);
+  Reportform := TReportForm.Create(Self);
 end;
 
 procedure TMainForm.VCLFrameThemeCBChange(Sender: TObject);

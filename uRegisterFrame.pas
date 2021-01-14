@@ -108,7 +108,7 @@ implementation
 {$R *.dfm}
 
 uses
-  uMainForm, uReportForm, uCustomerForm, uDM, System.Math;
+  uMainForm, uReceiptForm, uCustomerForm, uDM, System.Math;
 
 procedure TRegisterFrame.Initialize;
 begin
@@ -218,8 +218,8 @@ procedure TRegisterFrame.SpeedButton13Click(Sender: TObject);
 begin
   if LastReceiptMemo.Lines.Text<>'' then
   begin
-    ReportForm.LoadReport(LastReceiptMemo.Lines.Text);
-    ReportForm.ShowModal;
+    ReceiptForm.LoadReceipt(LastReceiptMemo.Lines.Text);
+    ReceiptForm.ShowModal;
   end;
 end;
 
@@ -271,8 +271,8 @@ begin
         LReceiptList.Text := DM.GenerateReceipt(LPaymentAmount, CustomersBindSourceDB.DataSet, CurrentSaleBindSourceDB.DataSet);
         LastReceiptMemo.Lines.Text := LReceiptList.Text;
         // print or save receipt
-        ReportForm.LoadReport(LastReceiptMemo.Lines.Text);
-        ReportForm.ShowModal;
+        ReceiptForm.LoadReceipt(LastReceiptMemo.Lines.Text);
+        ReceiptForm.ShowModal;
       finally
         LReceiptList.Free;
       end;

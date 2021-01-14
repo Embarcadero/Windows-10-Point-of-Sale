@@ -514,14 +514,14 @@ begin
            AddReportLine(ACSSStyle,LReceipt);
            AddReportLine('</head><body><table width="100%" align="center" cellspacing="0" cellpadding="10" border="0">',LReceipt);
            AddReportHeaderLine(TNetEncoding.HTML.Encode(C_COMPANY_NAME), TNetEncoding.HTML.Encode(C_RECEIPT),LReceipt);
-           AddReportLine(EmptyLBRow, LReceipt);
+           //AddReportLine(EmptyLBRow, LReceipt);
            AddReportSubHeader(TNetEncoding.HTML.Encode(DateTimeToStr(Now)),LReceipt);
            AddReportSubHeaderInfo(TNetEncoding.HTML.Encode(ADataSet.FieldByName('CustomerName').AsString),
                                   TNetEncoding.HTML.Encode(ADataSet.FieldByName('Address1').AsString),
                                   TNetEncoding.HTML.Encode(ADataSet.FieldByName('Address2').AsString),
                                   TNetEncoding.HTML.Encode(ADataSet.FieldByName('Phone').AsString),LReceipt);
-           AddReportLine(EmptyLBRow, LReceipt);
-           AddReportLine(EmptyLBRow, LReceipt);
+           //AddReportLine(EmptyLBRow, LReceipt);
+           //AddReportLine(EmptyLBRow, LReceipt);
            AddReceiptSection(ASaleDataSet, LReceipt);
            LReceipt.Append(TableTRStart + '</b></td><td align="right">'  + '<h2>Subtotal</h2>' + TableTREnd);
            LReceipt.Append(TableTRStart + '</b></td><td align="right">' + LFormatSettings.CurrencyString + CurrToStr(LSubTotal) + TableTREnd);
