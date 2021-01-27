@@ -67,10 +67,10 @@ The Products screen allows for creating and editing new products. Products, Cate
 - Misc1
 - Misc2
 - Misc3
-- Category
-- Units
-- Brand
-- Group
+- Category - Lookup field. See below.
+- Units - Lookup field. See below.
+- Brand - Lookup field. See below.
+- Group - Lookup field. See below.
 - Status
 - Image
 
@@ -79,28 +79,28 @@ The Products screen allows for creating and editing new products. Products, Cate
 - Id
 - Title
 
-The category section is a lookup field for the category field on the Products table.
+The Products category field is a lookup field for the Title field on the Category table.
 
 ### Brands
 
 - Id
 - Title
 
-The brands section is a lookup field for the category field on the Products table.
+The Products brands field is a lookup field for the Title field on the Brands table.
 
 ### Groups
 
 - Id
 - Title
 
-The groups section is a lookup field for the category field on the Products table.
+The Products groups field is a lookup field for the Title field on the Groups table.
 
 ### Units
 
 - Id
 - Title
 
-The units section is a lookup field for the category field on the Products table.
+The Products units field is a lookup field for the Title field on the Units table.
 
 ### Variant Attributes
 
