@@ -2,11 +2,13 @@
 
 ## Overview
 
-The Windows 10 Point Of Sale Template is a RAD Studio application built using VCL on Windows. It features a simple point of sale system for operating a cash register. It supports customers, creating a receipt, creating reports, multiple users with permission levels, price mode, and discounts. Additionally, it features high resolution VCL styles which allow you to easily customize the look and feel of the application at both design time and runtime. It is built in such a way as to be easily extendable.
+The Windows 10 Point Of Sale Template is a Delphi application built using VCL on Windows. It features a simple point of sale system for operating a cash register. It supports customers, creating a receipt, creating reports, multiple users with permission levels, price mode, and discounts. Additionally, it utilizes powerful VCL styles which provide a modern look and feel and high-DPI monitor support. It is built in such a way as to show the power of VCL in a common use case of a Point of Sale system as a starting point for other developers to use in their own projects.
 
 ## Architecture
 
 The template has been built to work both at design time and runtime. At design time everything is hooked up to TFDMemTables which allows you to add a change fields and live bind those fields where they need to go without any extra effort. At runtime the TFDMemTables are converted into TFDTables and stored in an encrypted SQLite database.
+
+The application is built in such a way that the database can easily be switched to the database of your choice. The built-in local database is SQLite but it can easily be changed to use IBTogo or InterBase for a more enterprise multi-user or multi-terminal solution. InterBase is a great choice because of its zero administration featureset. FireDAC supports over 20 different databases and is the database access layer used in the application.
 
 Each tab of the user interface is a separate frame that is embedded on the TPageControl of the TMainForm. Any interface changes should be made directly to the frames themselves and not the embedded frame on the TMainForm. If for whatever reason the frame on the TMainForm gets out of sync with the original frame you can delete the frame from the TMainForm tab and re-add it. Simply drop the frame back on the tab and set it&#39;s align property to alClient.
 
